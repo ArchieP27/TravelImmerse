@@ -1,0 +1,400 @@
+/* General Styles */
+body {
+    font-family: 'Girassol', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Main Content Section */
+.main {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto 70px;
+    padding: 20px 20px 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Place Overview Section */
+.place-overview {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.place-overview h1 {
+    font-size: 2.5em;
+    color: #D35400;
+    margin: 0;
+}
+
+.place-overview p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Cultural Practices Box */
+.culture-box {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffe7d8;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Scrollable Gallery Section */
+.gallery-section{
+    margin-top: 15px;
+}
+
+.gallery-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.gallery-scroll img {
+    height: 180px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+    background-color: #D35400;
+    border-radius: 10px;
+}
+
+.gallery-scroll::-webkit-scrollbar-track {
+    background-color: #ffe7d8;
+}
+
+/* Things to Do Section */
+.activities-section {
+    padding: 20px;
+    background-color: #ffe7d8;
+    margin: 20px 0;
+}
+
+/* Responsive Table */
+.things-to-do-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.things-to-do-table td {
+    padding: 10px;
+    background-color: #fff7e6;
+    border-radius: 8px;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tourist Spots Section */
+.tourist-spots {
+    margin: 20px 0;
+}
+
+.tourist-spot-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.tourist-item {
+    flex: 0 0 auto;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.tourist-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tourist-item h3 {
+    font-size: 1em;
+    margin: 8px 0;
+    color: #D35400;
+    text-align: center;
+}
+
+.tourist-item p {
+    font-size: 0.9em;
+    color: #333;
+    text-align: justify;
+}
+
+/* Resorts Section */
+.resorts-section {
+    padding: 20px;
+    background-color: #fff7e6;
+    margin-bottom: 30px;
+}
+
+.resort-list-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.resort-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.resort-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.resort-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.book-btn {
+    background-color: #D35400;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.book-btn:hover {
+    background-color: #c34600;
+}
+
+/* How to Reach Section */
+.how-to-reach-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.how-to-reach-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.how-to-reach-options .option {
+    flex: 1 1 calc(33.33% - 15px);
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 150px;
+}
+
+.how-to-reach-options h3 {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.how-to-reach-options .book-btn {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.how-to-reach-options .book-btn:hover {
+    background-color: #e04c1c;
+}
+
+/* Tourist Guides Section */
+.tourist-guides-section {
+    margin: 30px 0;
+}
+
+.guide-list-scroll {
+    max-height: 250px;
+    overflow-y: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.guide-item {
+    width: 150px;
+    text-align: center;
+}
+
+.guide-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.guide-info {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.guide-info img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Review Section */
+.review-section {
+    padding: 20px;
+    margin: 20px 0px 0px;
+    box-sizing: border-box;
+    background-color: #ffe7d8;
+    border-radius: 8px;
+}
+
+.review-post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-post input, 
+.review-post textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.post-review-btn {
+    background-color: #D35400;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.post-review-btn:hover {
+    background-color: #c34600;
+}
+
+.user-reviews {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.user-review-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-review-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user-review-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Restaurants Section */
+.restaurants-section {
+    margin: 20px 0;
+    background-color: #fff7e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.restaurant-list-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.restaurant-item {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.restaurant-info {
+    text-align: center;
+}
+
+.restaurant-info h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #D35400;
+}
+
+.restaurant-info p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .how-to-reach-options {
+        flex-direction: column;
+    }
+}
+
+/* Hide Scrollbar - Works for Webkit Browsers like Chrome, Safari */
+.tourist-spot-scroll, 
+.resort-list-scroll, 
+.guide-list-scroll,
+.restaurant-list-scroll {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.tourist-spot-scroll::-webkit-scrollbar, 
+.resort-list-scroll::-webkit-scrollbar, 
+.guide-list-scroll::-webkit-scrollbar,
+.restaurant-list-scroll::-webkit-scrollba {
+    display: none; /* Chrome, Safari */
+}
