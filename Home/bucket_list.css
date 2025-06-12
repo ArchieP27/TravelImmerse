@@ -1,0 +1,125 @@
+body {
+    font-family: 'Girassol', cursive;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh; /* Adjusted to fit within screen */
+}
+
+h2 {
+    color: #ff6600;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.scrollable-table {
+    flex-grow: 1;
+    overflow-y: auto;
+    border-bottom: 2px solid #ff6600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background-color: #ff6600;
+    color: white;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+tr:hover {
+    background-color: #f9e0d6;
+}
+
+.item-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.item-img:hover {
+    transform: scale(1.1);
+}
+
+.remove-btn {
+    text-decoration: none;
+    color: red;
+    font-size: 22px;
+    transition: color 0.2s;
+}
+
+.remove-btn:hover {
+    color: darkred;
+    font-size: 24px;
+}
+
+/* Fixed subtotal and confirm button */
+.price-summary {
+    background: #fff9f5;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffd9c2;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.price-highlight {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.confirm-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.confirm-btn:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+.empty-bucket {
+    padding: 20px;
+    font-size: 1.2em;
+    color: #666;
+}
