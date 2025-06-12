@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Travel Immerse</title>
+    <link rel="icon" href="../images/Logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="../images/Logo.png" alt="Logo" width="80px" height="80px">
+        <h1>Create Your Account</h1>
+    </div>
+
+    <div class="main">
+        <h4>Join Travel Immerse and explore the world!</h4>
+        <form id="registerForm" method="POST" action="register.php">
+            <fieldset>
+                <legend>Register</legend>
+                
+                <label for="regName">Full Name</label>
+                <input type="text" id="regName" name="name" placeholder="Enter your full name" required>
+
+                <label for="regUsername">Username</label>
+                <input type="text" id="regUsername" name="username" placeholder="Choose a username" required>
+
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" name="email" placeholder="Enter your email" required>
+
+                <label for="regPassword">Password</label>
+                <input type="password" id="regPassword" name="password" placeholder="Create a password" required>
+
+                <input type="submit" value="Create Account">
+            </fieldset>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            const name = document.getElementById('regName').value.trim();
+            const username = document.getElementById('regUsername').value.trim();
+            const email = document.getElementById('regEmail').value.trim();
+            const password = document.getElementById('regPassword').value.trim();
+
+            // Validate Full Name
+            if (name === '') {
+                alert('Please enter your full name.');
+                event.preventDefault(); // Prevent form submission
+                return;
+            }
+
+            // Validate Username
+            if (username === '') {
+                alert('Please enter a username.');
+                event.preventDefault(); // Prevent form submission
+                return;
+            }
+
+            // Validate Email format
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                event.preventDefault(); // Prevent form submission
+                return;
+            }
+
+            // Validate Password (Minimum 6 characters)
+            if (password.length < 6) {
+                alert('Password must be at least 6 characters long.');
+                event.preventDefault(); // Prevent form submission
+                return;
+            }
+        });
+    </script>
+</body>
+</html>
