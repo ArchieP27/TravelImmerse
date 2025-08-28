@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="screenshots/logo.png" alt="Travel Immerse Logo" width="150" />
+  <img src="screenshots/Logo.png" alt="Travel Immerse Logo" width="150" />
 </p>
 
 <h1 align="center">🌍 Travel Immerse – Your Journey, Simplified!</h1>
