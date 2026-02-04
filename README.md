@@ -4,12 +4,21 @@
 
 <h1 align="center">🌍 Travel Immerse – Your Journey, Simplified!</h1>
  
+ ###
 
-![Made with PHP](https://img.shields.io/badge/Made%20with-PHP-777bb3?logo=php&logoColor=white)  
-![Database MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?logo=mysql&logoColor=white)  
-![Frontend HTML](https://img.shields.io/badge/Frontend-HTML5-E34F26?logo=html5&logoColor=white)  
-![Frontend CSS](https://img.shields.io/badge/Frontend-CSS3-1572B6?logo=css3&logoColor=white)  
-![Frontend JavaScript](https://img.shields.io/badge/Frontend-JavaScript-F7DF1E?logo=javascript&logoColor=black)  
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60" alt="HTML5" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="60" alt="CSS3"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" alt="JavaScript" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="60" alt="MySQL" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="60" alt="PHP" />
+</div>
+
+###
 
 Travel Immerse is an **all-in-one travel service platform for India**, designed to make trip planning seamless, immersive, and enjoyable. From destination discovery to resort booking, restaurant recommendations, guides, and travel arrangements – everything is available in one place.  
 
